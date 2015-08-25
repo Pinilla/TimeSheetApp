@@ -1,0 +1,10 @@
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\bin\Debug\TimeSheet.exe.config
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\bin\Debug\TimeSheet.exe
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\bin\Debug\TimeSheet.pdb
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.TimeSheetHelper.resources
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.Properties.Resources.resources
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.Text_Pop_Up.resources
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csproj.GenerateResource.Cache
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.exe
+D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb
