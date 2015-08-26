@@ -1,6 +1,6 @@
 ﻿namespace TimeSheet
 {
-    partial class Text_Pop_Up : System.Windows.Forms.Form
+    partial class Text_Pop_Up 
     {
         /// <summary>
         /// Required designer variable.

@@ -35,12 +35,12 @@
             this.displayTimer = new System.Windows.Forms.Timer(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.lblTimer = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnStop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(103, 27);
+            this.btnStart.Location = new System.Drawing.Point(39, 27);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
@@ -86,15 +86,22 @@
             this.lblTimer.TabIndex = 3;
             this.lblTimer.Text = "Timer";
             // 
-            // timer1
+            // btnStop
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.btnStop.Location = new System.Drawing.Point(172, 27);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 23);
+            this.btnStop.TabIndex = 4;
+            this.btnStop.Text = "Stop Timer";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // TimeSheetHelper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 273);
+            this.Controls.Add(this.btnStop);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.btnLunchIn);
             this.Controls.Add(this.btnLunchOut);
@@ -112,9 +119,9 @@
         private System.Windows.Forms.Button btnLunchOut;
         private System.Windows.Forms.Button btnLunchIn;
         private System.Windows.Forms.Timer displayTimer;
-        private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label lblTimer;
-        private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button btnStop;
     }
 }
 

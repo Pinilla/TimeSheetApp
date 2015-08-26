@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Globalization;
 
 namespace TimeSheet
 {
@@ -21,8 +22,9 @@ namespace TimeSheet
         private void btnOK_Click(object sender, EventArgs e)
         {
             StreamWriter outputFile;
-            outputFile = File.AppendText("Timesheet - " + DateTime.Today);
-            outputFile.WriteLine(DateTime.Now + " - " + txtStatus.Text + "\n");
+            outputFile = File.AppendText("C:\\TimeSheets\\Timesheet - " + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Day.ToString() + ".txt");
+            outputFile.WriteLine(DateTime.Now.ToString("g",
+                  DateTimeFormatInfo.InvariantInfo) + " - " + txtStatus.Text + "\n");
             outputFile.Close();
             Close();
         }

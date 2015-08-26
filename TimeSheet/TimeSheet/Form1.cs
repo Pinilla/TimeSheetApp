@@ -21,8 +21,9 @@ namespace TimeSheet
         {
 
             InitializeComponent();
-            //timer.Interval = 900000;
-            timer.Interval = 2000;
+            btnStop.Enabled = false;
+           timer.Interval = 900000;
+           // timer.Interval = 2000;
             timer.Tick += new EventHandler(TimerEventProcessor);
             displayTimer.Tick += new EventHandler(displayTimer_Tick);
         }
@@ -32,20 +33,26 @@ namespace TimeSheet
             timer.Start();
             displayTimer.Start();
             btnStart.Enabled = false;
+            btnStop.Enabled = true;
         }
 
-        private static void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
+        public void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
-            Application.Run(new Text_Pop_Up());
+            this.timer.Stop();
+            //i want to stop the timer here
+            Text_Pop_Up tpu = new Text_Pop_Up();
+            tpu.TopMost = true;
+            tpu.ShowDialog();
+            //i want to start the timer here
+            this.timer.Start();          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            timer.Interval = 3600000;
             timer.Stop();
-            timer.Start();
-            MessageBox.Show(timer.ToString());
-            
+            LunchPopUp lpu = new LunchPopUp();
+            lpu.ShowDialog();
+
         }
 
         private void btnLunchIn_Click(object sender, EventArgs e)
@@ -66,9 +73,12 @@ namespace TimeSheet
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void btnStop_Click(object sender, EventArgs e)
         {
-
+            btnStart.Enabled = true;
+            btnStop.Enabled = false;
+            timer.Stop();
+            displayTimer.Stop();
         }
     }
 }
