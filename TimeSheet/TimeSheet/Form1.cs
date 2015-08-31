@@ -38,13 +38,12 @@ namespace TimeSheet
 
         public void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
-            this.timer.Stop();
-            //i want to stop the timer here
+            timer.Stop();
             Text_Pop_Up tpu = new Text_Pop_Up();
             tpu.TopMost = true;
             tpu.ShowDialog();
-            //i want to start the timer here
-            this.timer.Start();          
+            timer.Start();
+            timeLeft = 900;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,7 +68,7 @@ namespace TimeSheet
             if (timeLeft > 0)
             {
                 timeLeft = timeLeft - 1;
-                lblTimer.Text = (timeLeft / 60).ToString() + ":" + (timeLeft % 60).ToString();
+                lblTimer.Text = (timeLeft / 60).ToString() + ":" + ((timeLeft % 60) > 10 ? (timeLeft % 60).ToString() : "0" + (timeLeft % 60).ToString());
             }
         }
 
