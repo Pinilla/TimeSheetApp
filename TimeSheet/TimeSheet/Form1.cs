@@ -68,7 +68,7 @@ namespace TimeSheet
             if (timeLeft > 0)
             {
                 timeLeft = timeLeft - 1;
-                lblTimer.Text = (timeLeft / 60).ToString() + ":" + ((timeLeft % 60) > 10 ? (timeLeft % 60).ToString() : "0" + (timeLeft % 60).ToString());
+                lblTimer.Text = (timeLeft / 60).ToString() + ":" + ((timeLeft % 60) >= 10 ? (timeLeft % 60).ToString() : "0" + (timeLeft % 60).ToString());
             }
         }
 
