@@ -12,31 +12,28 @@ namespace TimeSheet
 {
     public partial class LunchPopUp : Form
     {
-        int timeLeft;
+        TimeSpan tsCounter;
 
         public LunchPopUp()
-        {
+        { 
             
             InitializeComponent();
-            timer1.Tick += new EventHandler(timer1_Tick);
-            timeLeft = 3600;
-            timer1.Interval = 1000;
 
+            tsCounter = TimeSpan.FromHours(1);
+            timer1.Interval = 1000;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Close();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
-            if (timeLeft > 0)
+            if (tsCounter.TotalSeconds > 0)
             {
-                timeLeft = timeLeft - 1;
-                txtLunchTimer.Text = (timeLeft / 60).ToString() + ":" + (timeLeft % 60).ToString();
-               
+                tsCounter = tsCounter.Subtract(TimeSpan.FromSeconds(1));
+                txtLunchTimer.Text = tsCounter.ToString(@"mm\:ss");
             }
         }
     }

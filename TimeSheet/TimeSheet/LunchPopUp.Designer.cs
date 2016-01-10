@@ -43,18 +43,20 @@
             // txtLunchTimer
             // 
             this.txtLunchTimer.AutoSize = true;
-            this.txtLunchTimer.Location = new System.Drawing.Point(118, 70);
+            this.txtLunchTimer.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLunchTimer.Location = new System.Drawing.Point(71, 74);
             this.txtLunchTimer.Name = "txtLunchTimer";
-            this.txtLunchTimer.Size = new System.Drawing.Size(0, 13);
+            this.txtLunchTimer.Size = new System.Drawing.Size(141, 59);
             this.txtLunchTimer.TabIndex = 0;
+            this.txtLunchTimer.Text = "Timer";
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(100, 168);
+            this.btnClose.Location = new System.Drawing.Point(99, 209);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 1;
-            this.btnClose.Text = "OK";
+            this.btnClose.Text = "I\'m Back!";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 

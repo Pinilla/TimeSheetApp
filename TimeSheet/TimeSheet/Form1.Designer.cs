@@ -56,7 +56,7 @@
             this.btnLunchOut.TabIndex = 1;
             this.btnLunchOut.Text = "Lunch Out";
             this.btnLunchOut.UseVisualStyleBackColor = true;
-            this.btnLunchOut.Click += new System.EventHandler(this.button1_Click);
+            this.btnLunchOut.Click += new System.EventHandler(this.btnLunchOut_Click);
             // 
             // btnLunchIn
             // 
@@ -66,7 +66,7 @@
             this.btnLunchIn.TabIndex = 2;
             this.btnLunchIn.Text = "Lunch In";
             this.btnLunchIn.UseVisualStyleBackColor = true;
-            this.btnLunchIn.Click += new System.EventHandler(this.btnLunchIn_Click);
+            this.btnLunchIn.Visible = false;
             // 
             // displayTimer
             // 

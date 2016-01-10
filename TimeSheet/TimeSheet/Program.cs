@@ -19,11 +19,6 @@ namespace TimeSheet
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TimeSheetHelper());
 
-            string path = "C:\\Timesheets";
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
         }
 
         

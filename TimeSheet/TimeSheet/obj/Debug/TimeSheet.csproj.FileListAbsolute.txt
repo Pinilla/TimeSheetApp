@@ -8,3 +8,14 @@ D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.Text_Pop_Up.resour
 D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csproj.GenerateResource.Cache
 D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.exe
 D:\Projects\TimeSheet\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\bin\Debug\TimeSheet.exe.config
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\obj\Debug\TimeSheet.exe
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\bin\Debug\TimeSheet.exe
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\bin\Debug\TimeSheet.pdb
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\obj\Debug\TimeSheet.TimeSheetHelper.resources
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\obj\Debug\TimeSheet.LunchPopUp.resources
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\obj\Debug\TimeSheet.Properties.Resources.resources
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\obj\Debug\TimeSheet.Text_Pop_Up.resources
+C:\projects\TimeSheetApp\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csproj.GenerateResource.Cache
