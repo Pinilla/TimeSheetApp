@@ -22,7 +22,7 @@ namespace TimeSheet
         private void btnOK_Click(object sender, EventArgs e)
         {
             StreamWriter outputFile;
-            outputFile = File.AppendText("C:\\TimeSheets\\Timesheet - " + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Day.ToString() + ".txt");
+            outputFile = File.AppendText("C:\\TimeSheets\\Timesheet - " + DateTime.Now.Year.ToString() + "-" + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Day.ToString() + ".txt");
             outputFile.WriteLine(DateTime.Now.ToString("g",
                   DateTimeFormatInfo.InvariantInfo) + " - " + txtStatus.Text + "\n");
             outputFile.Close();
